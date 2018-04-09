@@ -1,0 +1,22 @@
+1
+setImmediate has higher probability to execute before setTimeout because 
+with setTimeout, the event loop has to pass through timers queue performing 
+any operations specific to each phase before executing callback, 
+but with setImmediate it goes to checks queue of event loop and executes the callback.
+
+2
+The nextTick queue is like priority queue whose all callback functions 
+are executed before executing the callback functions of event loop queue. 
+Hence, process.nextTick() is always processed before processing setImmediate().
+
+3
+global
+module
+console
+buffer
+process
+setImmediate()
+setInterval()
+setTimeout()
+clearInterval()
+require()
