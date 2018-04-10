@@ -1,0 +1,23 @@
+db.Books.save({ISBN:"ABC1234", Name:"Great Book", Author:"Great Man", Tags:["Fiction","Sci-Fi","Romance"], Borrowers:[{Borrower:"Ahmed", ReturnDate:"01/01/2017"}, {Borrower:"Mohamed", ReturnDate:"01/01/2018"}]})
+
+{
+	"_id" : ObjectId("5acc3bf4c1eed6f7f196b903"),
+	"ISBN" : "ABC1234",
+	"Name" : "Great Book",
+	"Author" : "Great Man",
+	"Tags" : [
+		"Fiction",
+		"Sci-Fi",
+		"Romance"
+	],
+	"Borrowers" : [
+		{
+			"Borrower" : "Ahmed",
+			"ReturnDate" : "01/01/2017"
+		},
+		{
+			"Borrower" : "Mohamed",
+			"ReturnDate" : "01/01/2018"
+		}
+	]
+}
