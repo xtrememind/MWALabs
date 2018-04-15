@@ -1,0 +1,1 @@
+add an index to isbn_number and tags and this will improve performance
